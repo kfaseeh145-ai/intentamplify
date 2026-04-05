@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intent Amplify® | Antique Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for standard icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar hidden-onload">
+        <div class="logo">
+            <span class="brand-text">Intent <span class="gold">Amplify</span>®</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#stats">Impact</a></li>
+        </ul>
+        <a href="#demo" class="btn-vintage nav-btn">Book a Demo</a>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content hidden-onload">
+            <div class="hero-text">
+                <span class="sub-heading">Unveil the Truth in Data</span>
+                <h1>Master B2B Demand with <span class="gold">Intent Signals</span></h1>
+                <p>We process millions of intent signals to illuminate the accounts ready to buy. Simplify your B2B selling journey with our timeless methodology.</p>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn-vintage primary">Unlock Growth</a>
+                    <a href="#services" class="btn-vintage secondary text-only">Explore Services <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <div class="ornate-frame">
+                    <img src="./hero.png" alt="Antique glowing compass representing intent signals" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="section-title hidden-onscroll">
+            <h2 class="playfair">Our Core <span class="gold">Offerings</span></h2>
+            <div class="vintage-divider"></div>
+            <p>A full-funnel demand engine combining classic outreach with cutting-edge intent algorithms.</p>
+        </div>
+        <div class="service-cards">
+            <!-- Cards revealed by JS on scroll -->
+            <div class="card hidden-onscroll reveal-delay-1">
+                <div class="card-icon"><i class="fas fa-calendar-check"></i></div>
+                <h3 class="playfair">Appointment Setting</h3>
+                <p>Unlock high-value meetings. We secure time with top GTM and demand gen executives.</p>
+            </div>
+            <div class="card hidden-onscroll reveal-delay-2">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <h3 class="playfair">Demand Generation</h3>
+                <p>Drive qualified leads and boost ROI with our data-driven strategies.</p>
+            </div>
+            <div class="card hidden-onscroll reveal-delay-3">
+                <div class="card-icon"><i class="fas fa-users-viewfinder"></i></div>
+                <h3 class="playfair">Account Based Marketing</h3>
+                <p>Unlock predictable pipeline growth with our multi-channel ABM approach.</p>
+            </div>
+            <div class="card hidden-onscroll reveal-delay-4">
+                <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+                <h3 class="playfair">Webinar Marketing</h3>
+                <p>Unleash your potential business power with highly engaged webinar audiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats" style="background-image: url('./data_nodes.png')">
+        <div class="stats-overlay"></div>
+        <div class="stats-container hidden-onscroll">
+            <div class="stat-item">
+                <span class="stat-number gold playfair" data-target="5">0</span><span class="stat-suffix gold playfair">Bn+</span>
+                <p class="stat-label">Global Data Points</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number gold playfair" data-target="3">0</span><span class="stat-suffix gold playfair">X</span>
+                <p class="stat-label">Return on Investment</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number gold playfair" data-target="4">0</span><span class="stat-suffix gold playfair">X</span>
+                <p class="stat-label">Sales Growth</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="demo" class="footer">
+        <div class="footer-content hidden-onscroll">
+            <h2 class="playfair">Ready to <span class="gold">Amplify</span> Your Audience?</h2>
+            <p>Join forces with us for better B2B Lead Generation and unmatched quality.</p>
+            <form class="vintage-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Business Email" required>
+                <button type="submit" class="btn-vintage full-width">Request Demo</button>
+            </form>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Intent Amplify Demo. Designed Exclusively with Antiquity.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
